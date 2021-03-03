@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color:#290c2e;
+}
+
+.menu {
+    
+}
+
+h1 {
+    padding: 10px 0 10px 25px;
+    font-family: 'Bigelow Rules', cursive;
+    font-weight: lighter;
+    font-size: 500%;
+}
+
+li {
+display: inline;
+padding: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #dc9ae6;
+    font-weight: bold;
+}
+
+.hero {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./images/sequins-3944452_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top: 3px solid rgb(29, 29, 29);
+    border-bottom: 3px solid rgb(29, 29, 29);
+}
+
+#headshot {
+    border-radius: 100%;
+    width: 200px;
+    float: right;
+    margin: 0 25px 0 25px;
+}
+
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}  */
+
+h2 {
+    font-family: 'Bigelow Rules', cursive;
+    font-weight: lighter;
+    font-size: 350%;
+    color: #dc9ae6;
+    padding: 25px;
+    display: inline;
+}
+
+p {
+    padding: 50px 25px;
+    border-left: 3px solid #dc9ae6;
+    width: 700px;
+    display: inline;
+}
+
+.thumbnail-large {
+    width: 500px;
+}
+
+.thumbnail {
+    width: 250px;
+}
+
