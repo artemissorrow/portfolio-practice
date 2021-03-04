@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
     background-color: black;
     color: #ccc;
@@ -12,10 +6,6 @@ body {
 
 header {
     background-color:#290c2e;
-}
-
-.menu {
-    
 }
 
 h1 {
@@ -52,13 +42,8 @@ a {
     width: 200px;
     float: right;
     margin: 0 25px 0 25px;
+    border: 3px solid rgb(29, 29, 29);
 }
-
-/* .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}  */
 
 h2 {
     font-family: 'Bigelow Rules', cursive;
@@ -69,18 +54,85 @@ h2 {
     display: inline;
 }
 
-p {
+.bio {
     padding: 50px 25px;
-    border-left: 3px solid #dc9ae6;
+    border-left: 3px solid #dc9ae6 ;
     width: 700px;
-    display: inline;
 }
 
-.thumbnail-large {
-    width: 500px;
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#about h2 {
+    flex: 0 0 25%;
+}
+
+#about p {
+    flex: 0 0 75%;
+}
+
+#work {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+#work h2 {
+    flex: 1 1 25%;
+}
+
+#projects {
+    padding: 50px 25px;
+    border-left: 3px solid #dc9ae6 ;
+    flex: 0 0 75%;
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#large-thumb {
+    flex: 0 0 100%;
+    border: 3px solid #ccc;
+}
+
+#large-thumb img {
+    width: 1000px;
 }
 
 .thumbnail {
-    width: 250px;
+    flex:1 1 50%;
+    border: 3px solid #ccc;
+}
+
+.thumbnail img {
+    width: 500px;
+}
+
+#contact {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+#contact h2 {
+    flex: 0 0 25%;
+}
+
+#contact ul {
+    flex: 0 0 75%;
+    padding: 50px 25px;
+    border-left: 3px solid #dc9ae6 ;
+    width: 700px;
+    display: inline;
 }
 
