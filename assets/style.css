@@ -42,7 +42,7 @@ a {
     width: 200px;
     float: right;
     margin: 0 25px 0 25px;
-    border: 3px solid rgb(29, 29, 29);
+    border: 3px solid #ccc;
 }
 
 h2 {
@@ -73,11 +73,11 @@ h2 {
 }
 
 #about h2 {
-    flex: 0 0 25%;
+    flex: 1 1 25%;
 }
 
 #about p {
-    flex: 0 0 75%;
+    flex: 1 1 75%;
 }
 
 #work {
@@ -93,7 +93,7 @@ h2 {
 #projects {
     padding: 50px 25px;
     border-left: 3px solid #dc9ae6 ;
-    flex: 0 0 75%;
+    flex: 1 1 75%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -106,26 +106,34 @@ h2 {
     color: rgb(29, 29, 29);
 }
 
-
+#projects img:hover {
+    filter: grayscale(1);
+}
 
 #large-thumb {
-    flex: 0 0 2;
+    flex: 0 1 2;
     border: 3px solid #ccc;
     margin: 5px;
+    max-width: 1006px;
+    width: 75%;
 }
 
 #large-thumb img {
-    width: 1010px;
+    max-width: 1006px;
+    width: 100%;
 }
 
 .thumbnail {
     flex:1 1 1;
     border: 3px solid #ccc;
     margin: 0 0 5px 5px;
+    max-width: 500px;
+    width: 37.5%;
 }
 
 .thumbnail img {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 #contact {
@@ -146,3 +154,22 @@ h2 {
     display: inline;
 }
 
+@media (max-width: 768px){
+    h2 {
+        font-size: x-large;
+    }
+
+    #projects h3 {
+        font-size: small;
+    }
+
+    #contact li {
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    #projects h3 {
+        font-size: x-small;
+    }
+}
