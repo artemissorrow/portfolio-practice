@@ -63,6 +63,7 @@ h2 {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: start;
 }
 
 #about {
@@ -80,8 +81,8 @@ h2 {
 }
 
 #work {
-    display: flex;
     flex: auto;
+    display: flex;
     flex-direction: row;
 }
 
@@ -93,25 +94,34 @@ h2 {
     padding: 50px 25px;
     border-left: 3px solid #dc9ae6 ;
     flex: 0 0 75%;
-    width: 1050px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
+#projects h3 {
+    font-size: larger;
+    background-color: #ccc;
+    color: rgb(29, 29, 29);
+}
+
+
+
 #large-thumb {
-    flex: 0 0 100%;
+    flex: 0 0 2;
     border: 3px solid #ccc;
+    margin: 5px;
 }
 
 #large-thumb img {
-    width: 1000px;
+    width: 1010px;
 }
 
 .thumbnail {
-    flex:1 1 50%;
+    flex:1 1 1;
     border: 3px solid #ccc;
+    margin: 0 0 5px 5px;
 }
 
 .thumbnail img {
@@ -120,11 +130,11 @@ h2 {
 
 #contact {
     display: flex;
-    flex: auto;
     flex-direction: row;
 }
 
 #contact h2 {
+    flex: auto;
     flex: 0 0 25%;
 }
 
